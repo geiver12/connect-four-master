@@ -1,22 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    (function() {
-        console.log('corro cuando se me da la gana')
-    })()
-
     const squares = document.querySelectorAll('.grid div')
     const result = document.querySelector('#result')
     const displayCurrent1 = document.querySelector('#c-1')
     const displayCurrent2 = document.querySelector('#c-2')
     const displayPlayer1 = document.querySelector('.player1')
     const displayPlayer2 = document.querySelector('.player2')
+
     let currentPlayer = 1,
         score1 = 0,
         score2 = 0,
         StopGame = true
 
-    var assingClass = 0
-    for (let i = 0; i < squares.length; i++) {
+    for (let i = 0, assingClass = 0; i < squares.length; i++) {
         squares[i].setAttribute('id', assingClass)
         assingClass++
         if (assingClass >= 7)
