@@ -1,23 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Connect Four</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js" charset="utf-8"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" as href="style.css">
 </head>
 
 <body>
-    <h1 class="title">Connect Four</h1>
+    <h1 class="title">Connect 4</h1>
     <div class="container">
-        <h3 class="player1">
-            Player 1 ::0
-        </h3>
+        <h3 class="player1">Player 1:</h3>
         <span class="current-1" id="c-1"></span>
         <h3 id="result"></h3>
-
-
         <div class="grid">
             <div></div>
             <div></div>
@@ -61,19 +58,17 @@
             <div></div>
             <div></div>
             <div></div>
-            <div class=taken></div>
-            <div class=taken></div>
-            <div class=taken></div>
-            <div class=taken></div>
-            <div class=taken></div>
-            <div class=taken></div>
-            <div class=taken></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
         </div>
-
-        <h3 class="player2">
-            Player 2 ::0
-        </h3>
+        <h3 class="player2">Player 2:</h3>
         <span id="c-2"></span>
+
     </div>
     <button onclick="resetGame()">Reset Game</button>
 </body>
